@@ -45,7 +45,7 @@ export default function RegisterPage() {
 
             // Step 2: Sign In the User
             const result = await signIn('credentials', {
-                redirect: true,
+                redirect: false,
                 email: email,
                 masterPassword: masterPassword,
             });

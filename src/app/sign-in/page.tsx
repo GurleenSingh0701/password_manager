@@ -22,7 +22,7 @@ const SignInPage: React.FC = () => {
         event.preventDefault();
         setError('');
         const result = await signIn('credentials', {
-            redirect: true,
+            redirect: false,
             email,
             masterPassword,
         });
